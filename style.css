@@ -1,0 +1,191 @@
+body{
+background-color: #282828;
+margin: auto 80px;
+background-image: url("images/background-img.jpg");
+background-attachment: fixed;
+}
+
+h1,h2,h3{
+  color: white;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+/*---navbar---*/
+
+.navbar{
+  position: fixed;
+  padding:20px 100% 10px 0;
+  background-color: #282828;
+}
+
+.navbar-logo{
+}
+
+/*---home-main-txt---*/
+
+.home-main-txt{
+  /* position: relative;
+  top: 170px; */
+  padding-top: 180px;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.hello{
+  font-weight: 500;
+  font-size: 64px;
+  color: #BEBEBE;
+}
+
+.risal{
+  font-weight: 500;
+  font-size: 128px;
+
+  /* animation: risal 2.5s linear;
+	animation-iteration-count: infinite; */
+}
+
+.risal:hover{
+  animation: risal 2.5s linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes risal{
+		100%,0%{
+			color: #FFFFFF;
+		}
+		8%{
+			color: #AADCD3;
+		}
+		16%{
+			color: #B783AB;
+		}
+		25%{
+			color: #6C69FF;
+		}
+		33%{
+			color: #838463;
+		}
+		41%{
+			color: #D9D9D9;
+		}
+		50%{
+			color: #EF7C7C;
+		}
+		58%{
+			color: #B6EEB4;
+		}
+		66%{
+			color: #BCA372;
+		}
+		75%{
+			color: #E49A9A;
+		}
+		83%{
+			color: #D9D9D9;
+		}
+		91%{
+			color: #D9DCB8;
+		}
+}
+
+.discription{
+  font-weight: 400;
+  font-size: 36px;
+}
+
+/*---button---*/
+.btn{
+  position: relative;
+  top: 120px;
+  font-family: 'Maven Pro', sans-serif;
+  background: black;
+  font-size: 28px;
+  font-weight: 500;
+  border-radius: 50px;
+  border-width: 3px;
+  width: 15%;
+}
+
+/* .resume-img{
+  width: 15%;
+  margin-right: 10px;
+} */
+
+/* .resume-img:hover{
+  background-image: url("images/resume-img-d.png");
+  width: 15%;
+} */
+
+/*---about section---*/
+.about-head{
+  font-size: 3.5rem;
+}
+
+.about-sec{
+  margin-top: 240px;
+  background-color: black;
+  text-align: center;
+  padding: 30px 80px;
+  border-radius: 20px;
+}
+
+.about-discription{
+  font-size: 2rem;
+  line-height: 2;
+  color: white;
+}
+
+/* ----projects---- */
+.projects{
+  padding: 50px 0;
+  text-align: left;
+}
+
+.projects_row{
+  padding: 50px 0;
+  width: 45%;
+}
+
+.projects_gif{
+  border-radius: 8px;
+  margin-bottom: 20px;
+  /* float: left; */
+}
+
+.projects_discription{
+  color: white;
+}
+
+/* ----Tablet view and Mobile phone view---- */
+@media screen
+ and (max-device-width: 1120px)
+ and (min-device-width: 220px)
+{
+  body{
+    background-image: url("images/background-img2.jpg");
+    background-attachment: fixed;
+  }
+
+  .btn{
+    width: 18%;
+  }
+
+}
+
+@media screen
+ and (max-device-width: 600px)
+ and (min-device-width: 220px)
+{
+  .projects{
+    text-align: center;
+  }
+
+  .projects_row{
+    width: 100%;
+  }
+  .projects_discription{
+    margin: 0 15% 0 15%;
+    text-align: center;
+  }
+
+}
